@@ -639,9 +639,9 @@ with gr.Blocks(title="EduAgent - Multi-Agent Course Recommendation System") as d
                     settings_status = gr.Markdown("Current Status: **Offline Heuristic Mode (Ready for Viva Demo)**")
 
                     save_settings_btn.click(
-                    update_orchestrator_settings,
-                    inputs=[provider_dropdown, api_key_box, model_box],
-                    outputs=[settings_status]
+                        update_orchestrator_settings,
+                        inputs=[provider_dropdown, api_key_box, model_box],
+                        outputs=[settings_status]
             )
 
     # Preset triggers
